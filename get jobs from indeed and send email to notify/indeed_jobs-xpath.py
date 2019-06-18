@@ -94,8 +94,8 @@ def find_jobs(job_title, page_nums):
                 index_num += 1
                 count += 1
                 time.sleep(1)
-    print('Done searching, {} new jobs has been found,sending email now...'.format(count+1))
-    #send_email('There are {} new jobs found for the last 5 pages'.format(count))
+    print('Done searching, {} new jobs has been found,sending email now...'.format(count))
+    send_email('There are {} new jobs found for the last {} pages'.format(count, page_nums))
 
 
 
